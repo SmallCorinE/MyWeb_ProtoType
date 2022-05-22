@@ -7,14 +7,19 @@
 
 	<body style="background-color:black; Color:white;">
 
-		<input type="button" value="day" onclick="
-			document.querySelector('body').style.backgroundColor='white';
-			document.querySelector('body').style.color='black';
+		<input type="button" value="bringt" onclick="
+			var target = document.querySelector('body');
+			if(this.value === 'bright'){
+				target.style.backgroundColor='white';
+				target.style.color='black';
+				this.value = 'dark';
+			} else {
+				target.style.backgroundColor= 'black';
+				target.style.color= 'white';
+				this.value = 'bright';
+			}
 		">
-		<input type="button" value="night" onclick="
-			document.querySelector('body').style.backgroundColor= 'black';
-			document.querySelector('body').style.color= 'white';
-		">
+
 		<article>
 			<h2>power</h2>
 			<p>
