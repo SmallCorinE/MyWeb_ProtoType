@@ -1,77 +1,34 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<title>contrastHandler</title>
+<head>
+	<title>contrastHandler</title>
+	<meta charset="utf-8">
+	<script src="button.js"></script>
+</head>
 
-		<script type="text/javascript">
-			function setLinkColor(color){ //링크 색깔
-				var alist = document.querySelectorAll('a');
-				var i = 0;
-				while(i<alist.length){
-					console.log(alist[i]);
-					alist[i].style.color=color;
-					i=i+1;
-				}
-			}
-			var Body = {
-				setColor:function (color){
-					document.querySelector('body').style.backgroundColor=color;
-				}
-			}
-				document.querySelector('body').style.backgroundColor=color;
-				setBackGColor
-			}
-			function setBackGColor(color){
-				document.querySelector('body').style.backgroundColor=color;
-			}
-			function setLetterColor(color){
-				document.querySelector('body').style.color=color;
-			}
-			function contrastHandler(self){ //버튼 자
-				var target = document.querySelector('body');
-				if(self.value === 'bright'){
-					Body.setBackGColor('white')
-					Body.setLetterColor('black')
-					self.value = 'dark';
-					Link.setLinkColor('red')
+<body style="background-color:black; Color:white;">
 
-				} else {
-					Body.setBackGColor('black')
-					Body.setLetterColor('white')
-					self.value = 'bright';
+	<input type="button" value="Make it bringt" onclick="contrastHandler(this);">
 
-					Link.setLinkColor('powderblue');
-				}
-			}
-		</script>
-	</head>
+	<h1>
+		<a href="nowhere.html">BigLink</a>
+	</h1>
+	<nav>
+		<ol>
+			<li><a href="1.html" target="_blank" title="html page">page_html</a></li>
+			<li><a href="2.html" target="_blank" title="vc page">page_vc</a></li>
+			<li><a href="3.html" target="_blank" title="op page">page_op</a></li>
+		</ol>
+	</nav>
 
-	<body style="background-color:black; Color:white;">
-
-		<input type="button" value="bringt" onclick="
-			contrastHandler(this);
-		">
-
-		<h1>
-			<a href="dasfads">dsafsadfsadf</a>
-		</h1>
-		<nav>
-			<ol>
-				<li><a href="1.html" target="_blank" title="html page">page_html</a></li>
-				<li><a href="2.html" target="_blank" title="vc page">page_vc</a></li>
-				<li><a href="3.html" target="_blank" title="op page">page_op</a></li>
-			</ol>
-		</nav>
-
-		<article>
-			<h2>power</h2>
-			<p>
-				We went around several stages. I was watching a performance for a while in front of a stage when you tapped my shoulder with your finger. And then he started to laugh. Your smile was bright and white.
-				“Why don’t we walk in the rain?”
-				It was an unexpected offer. Playing in the rain is fun, I thought. I remembered my elementary school days. Because I had no reason to refuse, or because I wanted to obey you unconditionally, I closed my umbrella. You took a few steps and fell and turned around. You laughed, and I laughed along with you because I liked you so much. It was romantic to be in the rain with a girl I like at a rock festival.
-				In the rain, talking and walking around, I followed you because you wanted to go smoke a cigarette. I foolishly took the cigarette you gave me and smoked it. But before you gave me the cigarette, you broke the capsule with your mouth and gave it to me. As I accepted the cigarette, the faint red lip marks, I was lost in thought. What does this mean? I sucked in the smoke and spit it out, thinking, but no answer came out.
-			</p>
-		</article>
-	</body>
+	<article>
+		<h2>power</h2>
+		<p>
+			We went around several stages. I was watching a performance for a while in front of a stage when you tapped my shoulder with your finger. And then he started to laugh. Your smile was bright and white.
+			“Why don’t we walk in the rain?”
+			It was an unexpected offer. Playing in the rain is fun, I thought. I remembered my elementary school days. Because I had no reason to refuse, or because I wanted to obey you unconditionally, I closed my umbrella. You took a few steps and fell and turned around. You laughed, and I laughed along with you because I liked you so much. It was romantic to be in the rain with a girl I like at a rock festival.
+			In the rain, talking and walking around, I followed you because you wanted to go smoke a cigarette. I foolishly took the cigarette you gave me and smoked it. But before you gave me the cigarette, you broke the capsule with your mouth and gave it to me. As I accepted the cigarette, the faint red lip marks, I was lost in thought. What does this mean? I sucked in the smoke and spit it out, thinking, but no answer came out.
+		</p>
+	</article>
+</body>
 </html>
